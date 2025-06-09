@@ -21,6 +21,86 @@ public:
     MOCK_METHOD(SteeringSystemName, getSteeringSystemName, (), (override));
 };
 
+TEST(NormalCarMakingTest, TC1_SEDAN_GM_MANDO_MOBIS) {
+    CarType carType = SEDAN;
+    EngineName engineName = GM;
+    BrakeSystemName brakeSystemName = MANDO;
+    SteeringSystemName steeringSystemName = MOBIS;
+
+    ConcreteCarBuilder* builder = new ConcreteCarBuilder();
+    Car* car = builder->setCarType(carType)
+        .setEngine(engineName)
+        .setBrakeSystem(brakeSystemName)
+        .setSteeringSystem(steeringSystemName)
+        .build();
+
+    bool result = CarValidator::validate(car);
+    CarValidator::testProducedCar(car);
+    CarRunner::runProducedCar(car);
+
+    EXPECT_TRUE(result);
+}
+
+TEST(NormalCarMakingTest, TC2_SEDAN_TOYOTA_BOSCH_BOSCH) {
+    CarType carType = SEDAN;
+    EngineName engineName = TOYOTA;
+    BrakeSystemName brakeSystemName = BOSCH_B;
+    SteeringSystemName steeringSystemName = BOSCH_S;
+
+    ConcreteCarBuilder* builder = new ConcreteCarBuilder();
+    Car* car = builder->setCarType(carType)
+        .setEngine(engineName)
+        .setBrakeSystem(brakeSystemName)
+        .setSteeringSystem(steeringSystemName)
+        .build();
+
+    bool result = CarValidator::validate(car);
+    CarValidator::testProducedCar(car);
+    CarRunner::runProducedCar(car);
+
+    EXPECT_TRUE(result);
+}
+
+TEST(NormalCarMakingTest, TC3_SUV_WIA_BOSCH_BOSCH) {
+    CarType carType = SUV;
+    EngineName engineName = WIA;
+    BrakeSystemName brakeSystemName = CONTINENTAL;
+    SteeringSystemName steeringSystemName = MOBIS;
+
+    ConcreteCarBuilder* builder = new ConcreteCarBuilder();
+    Car* car = builder->setCarType(carType)
+        .setEngine(engineName)
+        .setBrakeSystem(brakeSystemName)
+        .setSteeringSystem(steeringSystemName)
+        .build();
+
+    bool result = CarValidator::validate(car);
+    CarValidator::testProducedCar(car);
+    CarRunner::runProducedCar(car);
+
+    EXPECT_TRUE(result);
+}
+
+TEST(NormalCarMakingTest, TC4_TRUCK_GM_BOSCH_BOSCH) {
+    CarType carType = TRUCK;
+    EngineName engineName = GM;
+    BrakeSystemName brakeSystemName = CONTINENTAL;
+    SteeringSystemName steeringSystemName = MOBIS;
+
+    ConcreteCarBuilder* builder = new ConcreteCarBuilder();
+    Car* car = builder->setCarType(carType)
+        .setEngine(engineName)
+        .setBrakeSystem(brakeSystemName)
+        .setSteeringSystem(steeringSystemName)
+        .build();
+
+    bool result = CarValidator::validate(car);
+    CarValidator::testProducedCar(car);
+    CarRunner::runProducedCar(car);
+
+    EXPECT_TRUE(result);
+}
+
 TEST(CarPartValidatorTest, TC1_SEDAN_CONTINENTAL) {
     CarType carType = SEDAN;
     EngineName engineName = GM;
