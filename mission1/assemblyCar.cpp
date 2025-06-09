@@ -397,7 +397,6 @@ int isValidAssemblyCheck()
     if (inputDataStack[CarType_Q] == TRUCK && inputDataStack[Engine_Q] == WIA)                    return false;
     if (inputDataStack[CarType_Q] == TRUCK && inputDataStack[BrakeSystem_Q] == MANDO)             return false;
     if (inputDataStack[BrakeSystem_Q] == BOSCH_B && inputDataStack[SteeringSystem_Q] != BOSCH_S)  return false;
-    if (inputDataStack[BrakeSystem_Q] != BOSCH_B && inputDataStack[SteeringSystem_Q] == BOSCH_S)  return false;
 
     return true;
 }
