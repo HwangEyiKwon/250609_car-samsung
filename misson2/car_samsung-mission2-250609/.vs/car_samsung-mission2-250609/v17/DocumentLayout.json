@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\git\\misson2\\car_samsung-mission2-250609\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DC74CC6-2D65-45BE-9E69-ADA02895C72C}|car_samsung-mission2-250609\\car_samsung-mission2-250609.vcxproj|C:\\Users\\User\\source\\repos\\git\\misson2\\car_samsung-mission2-250609\\car_samsung-mission2-250609\\assembly_test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9DC74CC6-2D65-45BE-9E69-ADA02895C72C}|car_samsung-mission2-250609\\car_samsung-mission2-250609.vcxproj|solutionrelative:car_samsung-mission2-250609\\assembly_test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DC74CC6-2D65-45BE-9E69-ADA02895C72C}|car_samsung-mission2-250609\\car_samsung-mission2-250609.vcxproj|C:\\Users\\User\\source\\repos\\git\\misson2\\car_samsung-mission2-250609\\car_samsung-mission2-250609\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9DC74CC6-2D65-45BE-9E69-ADA02895C72C}|car_samsung-mission2-250609\\car_samsung-mission2-250609.vcxproj|solutionrelative:car_samsung-mission2-250609\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\git\\misson2\\car_samsung-mission2-250609\\car_samsung-mission2-250609\\main.cpp",
+              "RelativeDocumentMoniker": "car_samsung-mission2-250609\\main.cpp",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\git\\misson2\\car_samsung-mission2-250609\\car_samsung-mission2-250609\\main.cpp",
+              "RelativeToolTip": "car_samsung-mission2-250609\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-09T01:58:03.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "assembly_test.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\git\\misson2\\car_samsung-mission2-250609\\car_samsung-mission2-250609\\assembly_test.cpp",
+              "RelativeDocumentMoniker": "car_samsung-mission2-250609\\assembly_test.cpp",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\git\\misson2\\car_samsung-mission2-250609\\car_samsung-mission2-250609\\assembly_test.cpp",
+              "RelativeToolTip": "car_samsung-mission2-250609\\assembly_test.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-09T01:57:47.471Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
