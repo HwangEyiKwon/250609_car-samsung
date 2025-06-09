@@ -136,6 +136,7 @@
     <ClInclude Include="car.h" />
     <ClInclude Include="carAssemblyTypes.h" />
     <ClInclude Include="carBuilder.h" />
+    <ClInclude Include="carRunner.h" />
     <ClInclude Include="engine.h" />
     <ClInclude Include="partFactory.h" />
     <ClInclude Include="steeringSystem.h" />

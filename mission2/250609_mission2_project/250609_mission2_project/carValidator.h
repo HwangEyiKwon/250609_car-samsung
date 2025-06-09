@@ -1,3 +1,5 @@
+#pragma once
+
 #include "car.h"
 #include <stdio.h>
 

@@ -27,6 +27,11 @@ private:
 
 class Sedan : public Car {
 public:
+	Sedan(Engine* engine, BrakeSystem* brakeSystem, SteeringSystem* steeringSystem)
+		: Car(engine, brakeSystem, steeringSystem)
+	{
+	};
+
 	CarType getCarType()
 	{
 		return CarType::SEDAN;
@@ -35,6 +40,11 @@ public:
 
 class Suv : public Car {
 public:
+	Suv(Engine* engine, BrakeSystem* brakeSystem, SteeringSystem* steeringSystem)
+		: Car(engine, brakeSystem, steeringSystem)
+	{
+	};
+
 	CarType getCarType()
 	{
 		return CarType::SUV;
@@ -43,6 +53,11 @@ public:
 
 class Truck : public Car {
 public:
+	Truck(Engine* engine, BrakeSystem* brakeSystem, SteeringSystem* steeringSystem)
+		: Car(engine, brakeSystem, steeringSystem)
+	{
+	};
+
 	CarType getCarType()
 	{
 		return CarType::TRUCK;
