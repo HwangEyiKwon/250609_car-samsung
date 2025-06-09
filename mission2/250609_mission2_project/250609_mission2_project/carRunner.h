@@ -10,7 +10,7 @@ public:
         Engine* engine = car->getEngine();
         BrakeSystem* brakeSystem = car->getBrakeSystem();
         SteeringSystem* steeringSystem = car->getSteeringSystem();
-        
+
         if (CarValidator::validate(car) == false)
         {
             printf("자동차가 동작되지 않습니다\n");
@@ -41,4 +41,4 @@ public:
 
         printf("자동차가 동작됩니다.\n");
     }
-}
+};

@@ -1,4 +1,4 @@
-#if 0//def _DEBUG
+#ifdef _DEBUG
 
 #include "gmock/gmock.h"
 
@@ -8,9 +8,9 @@ int main() {
 }
 #else
 
-#include <cstdio>
-#include <cstring>
-#include <cstdlib>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #include "carAssemblyTypes.h"
 #include "car.h"
 #include "carValidator.h"
