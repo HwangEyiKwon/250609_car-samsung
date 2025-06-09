@@ -4,7 +4,7 @@
 
 #define CLEAR_SCREEN "\033[H\033[2J"
 
-enum QuesionType
+enum QuestionType
 {
     First_Q,
     CarType_Q = First_Q,
@@ -385,9 +385,9 @@ void selectSteeringSystem(SteeringSystem steeringSystem)
 {
     inputDataStack[SteeringSystem_Q] = steeringSystem;
     if (steeringSystem == SteeringSystem::BOSCH_S)
-        printf("BOSCH 제동장치를 선택하셨습니다.\n");
+        printf("BOSCH 조향장치를 선택하셨습니다.\n");
     else if (steeringSystem == SteeringSystem::MOBIS)
-        printf("MOBIS 제동장치를 선택하셨습니다.\n");
+        printf("MOBIS 조향장치를 선택하셨습니다.\n");
 }
 
 int isValidAssemblyCheck()
@@ -463,7 +463,7 @@ void testProducedCar()
     if (inputDataStack[BrakeSystem_Q] == BOSCH_B && inputDataStack[SteeringSystem_Q] != BOSCH_S)
     {
         printf("자동차 부품 조합 테스트 결과 : FAIL\n");
-        if (inputDataStack[SteeringSystem_Q] == MOBIS) printf("Bosch엔진에는 Mobis제동장치 사용 불가\n");
+        printf("Bosch제동장치에는 Bosch 조향장치 이외 사용 불가\n");
         return;
     }
 
