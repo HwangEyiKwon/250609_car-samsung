@@ -12,6 +12,10 @@ public:
 
 	virtual CarType getCarType() = 0;
 
+	Engine* getEngine() { return myEngine; };
+	BrakeSystem* getBrakeSystem() { return myBrakeSystem; };
+	SteeringSystem* getSteeringSystem() { return mySteeringSystem; };
+
 protected:
 	Engine* myEngine;
 	BrakeSystem* myBrakeSystem;

@@ -38,3 +38,12 @@ public:
 		return EngineName::WIA;
 	}
 };
+
+class BrokenEngine : public Engine
+{
+public:
+	EngineName getEngineName()
+	{
+		return EngineName::BROKEN;
+	}
+};

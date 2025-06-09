@@ -4,6 +4,7 @@ Engine* PartFactory::createEngine(EngineName engineName) {
     if (engineName == GM)      return new GMEngine();
     if (engineName == TOYOTA)  return new ToyotaEngine();
     if (engineName == WIA)     return new WIAEngine();
+    if (engineName == BROKEN)  return new BrokenEngine();
 }
 
 BrakeSystem* PartFactory::createBrakeSystem(BrakeSystemName brakeSystemName) {
