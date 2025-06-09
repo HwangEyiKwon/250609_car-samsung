@@ -10,6 +10,8 @@ public:
         : myEngine(engine), myBrakeSystem(brakeSystem), mySteeringSystem(steeringSystem) {
     }
 
+	virtual CarType getCarType() = 0;
+
 protected:
 	Engine* myEngine;
 	BrakeSystem* myBrakeSystem;
@@ -20,13 +22,25 @@ private:
 };
 
 class Sedan : public Car {
-
+public:
+	CarType getCarType()
+	{
+		return CarType::SEDAN;
+	}
 };
 
 class SUV : public Car {
-
+public:
+	CarType getCarType()
+	{
+		return CarType::SUV;
+	}
 };
 
 class Truck : public Car {
-
+public:
+	CarType getCarType()
+	{
+		return CarType::TRUCK;
+	}
 };
