@@ -9,7 +9,7 @@ using namespace std;
 
 class PartFactory {
 public:
-    static Engine* createEngine(string brand);
-    static BrakeSystem* createBrakeSystem(string brand);
-    static SteeringSystem* createSteeringSystem(string brand);
+    static Engine* createEngine(EngineName engineName);
+    static BrakeSystem* createBrakeSystem(BrakeSystemName brakeSystemName);
+    static SteeringSystem* createSteeringSystem(SteeringSystemName steeringSystemName);
 };

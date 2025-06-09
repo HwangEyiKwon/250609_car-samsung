@@ -29,7 +29,7 @@ public:
 	}
 };
 
-class SUV : public Car {
+class Suv : public Car {
 public:
 	CarType getCarType()
 	{

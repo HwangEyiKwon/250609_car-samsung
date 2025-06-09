@@ -126,7 +126,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="assembly_car.cpp" />
+    <ClCompile Include="carValidator.h" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="partFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="brakeSystem.h" />
+    <ClInclude Include="car.h" />
+    <ClInclude Include="carAssemblyTypes.h" />
+    <ClInclude Include="carBuilder.h" />
+    <ClInclude Include="engine.h" />
+    <ClInclude Include="partFactory.h" />
+    <ClInclude Include="steeringSystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
